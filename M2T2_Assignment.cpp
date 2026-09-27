@@ -3,19 +3,18 @@
 // Alexander
 // 9/27/2026
 // Checkout Machine
-
 #include <iostream>
 #include <iomanip>
 using namespace std;
- 
+
 int main() {
     // SIMPLE RECIPT
     // + SALES TAX
 
     // VARIABLES
     string item = "Apple";
-    double item_price = 3.99
-    double tax_percent = 0.08
+    double item_price = 3.99;
+    double tax_percent = 0.08;
     double tax_amount; 
     double total; //price + tax
     // GREET USER AND TAKE ORDER
@@ -30,7 +29,11 @@ int main() {
 
     // PRINT RECPIT
     cout << setprecision(2) << fixed;
-    cout << total << endl;
+    cout << "______________________" << endl;
+    cout << item << " Price: \t$" << item_price << endl;
+    cout << "Tax: \t\t$" << tax_amount << endl;
+    cout << "Total: \t\t$" << total << endl;
+    cout << "______________________" << endl;
 
     return 0; // no errors
 }
