@@ -29,8 +29,8 @@ int main() {
     total = item_price + tax_amount;
 
     // PRINT RECPIT
-    cout << setprecision << fixed;
+    cout << setprecision(2) << fixed;
     cout << total << endl;
-    
+
     return 0; // no errors
 }
